@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coffee : MonoBehaviour
 {
-    [SerializeField] private int id;
+    [SerializeField] public int id;
     [SerializeField] private AnimationClip[] animations;
 
     protected Animator animator;

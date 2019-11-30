@@ -45,7 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientStartPoint: {x: 2, y: -0.3, z: 0}
   coffees:
-  - {fileID: 0}
+  - {fileID: 7441903092678913774, guid: 2b7c8a1f812b940439137590dfbd64f9, type: 3}
   clients:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8514132709975356371, guid: c3821e49f7f5d4144aa30600d19bce7f, type: 3}
