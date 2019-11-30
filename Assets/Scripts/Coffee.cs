@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Coffee : MonoBehaviour
 {
-    [SerializeField] private string type;
-
     [SerializeField] private AnimationClip[] animations;
 
     protected Animator animator;
