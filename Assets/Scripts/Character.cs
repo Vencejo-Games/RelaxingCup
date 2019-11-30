@@ -21,6 +21,7 @@ public class Character : MonoBehaviour
    
     // Componentes del Character
     private SpriteRenderer spriteRenderer;
+    private GameObject sombra;
 
     protected Game game;
 
@@ -28,6 +29,7 @@ public class Character : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         game = FindObjectOfType<Game>();
+        sombra = transform.GetChild(0).gameObject;
     }
 
     // Start is called before the first frame update
@@ -67,6 +69,7 @@ public class Character : MonoBehaviour
         }
 
         transform.position = new Vector3(transform.position.x, transform.position.y + jumpSpeed * Time.deltaTime, transform.position.z);
+        sombra.transform.position = new Vector3(transform.position.x, sombra.transform.position.y, transform.position.z);
     }
 
 
