@@ -10,11 +10,14 @@ public class Client : Character
 
     // Componentes del Character
     private Canvas canvas;
+    
+    private Character playerController;
 
     protected override void Awake()
     {
         base.Awake();
         canvas = GetComponentInChildren<Canvas>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
     }
 
     // Start is called before the first frame update
@@ -33,9 +36,13 @@ public class Client : Character
     
     void OnMouseDown()
     {
-        StartCoroutine(ActivarBocadillo());
+        playerController.setFinalPosition(transform);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        StartCoroutine(ActivarBocadillo());
+    }
     IEnumerator ActivarBocadillo()
     {
         // this object was clicked
