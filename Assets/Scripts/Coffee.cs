@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coffee : MonoBehaviour
 {
+    [SerializeField] private int id;
     [SerializeField] private AnimationClip[] animations;
 
     protected Animator animator;
@@ -19,8 +20,7 @@ public class Coffee : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int i = 2;
-        animatorOverrideController["coffee"] = animations[i];
+        animatorOverrideController["coffee"] = animations[id];
     }
 
 }

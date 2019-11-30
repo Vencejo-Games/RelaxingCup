@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Client : Character
 {
+    [SerializeField] private string[] texts;
+
+    private Coffee coffee;
+
     // Componentes del Character
     private Canvas canvas;
 
@@ -18,6 +22,7 @@ public class Client : Character
     {
         base.Start();
         canvas.enabled = false;
+        coffee = game.Deseo();
     }
 
     // Update is called once per frame

@@ -7,15 +7,14 @@ public class Character : MonoBehaviour
     [SerializeField] public Sprite walkSprite;
     [SerializeField] public Sprite seatedSprite;
 
-    [SerializeField] private Transform start;
-    [SerializeField] private Transform end;
+    [SerializeField] public Transform start;
+    [SerializeField] public Transform end;
 
-    [SerializeField] private float walkSpeed = 0.5f;
-    [SerializeField] private float rotationSpeed = 100f;
-    [SerializeField] private float jumpSpeed = 0.1f;
-
-    [SerializeField] private float walkRotation = 3.0f;
-    [SerializeField] private float walkJump = 0.005f;
+    private float walkSpeed = 0.5f;
+    private float rotationSpeed = 100f;
+    private float jumpSpeed = 0.1f;
+    private float walkRotation = 3.0f;
+    private float walkJump = 0.005f;
 
     private Quaternion targetRotation;
     private float targetJump;
@@ -24,9 +23,12 @@ public class Character : MonoBehaviour
     // Componentes del Character
     private SpriteRenderer spriteRenderer;
 
+    protected Game game;
+
     protected virtual void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        game = FindObjectOfType<Game>();
     }
 
     // Start is called before the first frame update
