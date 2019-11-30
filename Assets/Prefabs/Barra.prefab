@@ -345,7 +345,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20bcf69b0b31a4e4a86d651f9e7d2b49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0feb8d0f4ec06944385607af69a7d1a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -385,7 +385,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.44, y: 0.41}
+    oldSize: {x: 0.54, y: 0.48}
     newSize: {x: 0.44, y: 0.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -681,6 +681,7 @@ GameObject:
   - component: {fileID: 4503006566248662224}
   - component: {fileID: 4503006566248662227}
   - component: {fileID: 4503006566248662226}
+  - component: {fileID: 1610462097}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -707,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.013, y: 0.185}
+  m_AnchoredPosition: {x: -0.071, y: 0.264}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4503006566248662224
@@ -770,6 +771,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1610462097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503006566248662236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a96d98714a4d1f4580707552a51143e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffee: {fileID: 7441903092678913775, guid: 2b7c8a1f812b940439137590dfbd64f9, type: 3}
 --- !u!1 &4503006567159795276
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,8 +849,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Caf\xE9 con leche"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
