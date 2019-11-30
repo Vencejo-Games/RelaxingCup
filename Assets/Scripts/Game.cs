@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GAme : MonoBehaviour
 {
-    [SerializeField] private GameObject[] coffees;
+    [SerializeField] private Coffee[] coffees;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +16,11 @@ public class GAme : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public Coffee Deseo()
+    {
+        // devolvemos un cafe aleatorio cuando un cliente tiene un deseo
+        return coffees[Random.Range(0, coffees.Length)];
     }
 }

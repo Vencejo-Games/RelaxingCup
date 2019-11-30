@@ -22,29 +22,26 @@ public class Character : MonoBehaviour
     private bool hasArrived;
 
     // Componentes del Character
-    private Canvas canvas;
     private SpriteRenderer spriteRenderer;
 
-    private void Awake()
+    protected virtual void Awake()
     {
-        canvas = GetComponentInChildren<Canvas>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         // ponemos al personaje en la posicion inicial
         transform.position = start.position;
         targetRotation = Quaternion.Euler(0, 0, walkRotation);
-        targetJump = walkJump;
+        targetJump = transform.position.y + walkJump;
 
-        canvas.enabled = false;
         spriteRenderer.sprite = walkSprite;
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (!hasArrived)
         {
@@ -60,23 +57,15 @@ public class Character : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, end.position, walkSpeed * Time.deltaTime);
 
         // saltito south park
-        if ( (targetJump != 0 && transform.position.y >= targetJump) 
-            || targetJump == 0 && transform.position.y <= 0)
+        if (jumpSpeed > 0 && transform.position.y >= targetJump
+            || jumpSpeed < 0 && transform.position.y <= targetJump)
         {
-            if(targetJump != 0)
-            {
-                targetJump = 0;
-                jumpSpeed *= -1.0f;
-            }
-            else
-            {
-                targetJump = walkJump;
-                jumpSpeed *= -1.0f;
-            }
+            jumpSpeed *= -1.0f;
+            walkJump *= -1.0f;
+            targetJump = targetJump + (walkJump * 2);
         }
 
         transform.position = new Vector3(transform.position.x, transform.position.y + jumpSpeed * Time.deltaTime, transform.position.z);
-
     }
 
     private void UpdateRotation()
@@ -101,19 +90,6 @@ public class Character : MonoBehaviour
             spriteRenderer.sprite = seatedSprite;
             hasArrived = true;
         }
-    }
-
-    void OnMouseDown()
-    {
-        StartCoroutine(ActivarBocadillo());
-    }
-
-    IEnumerator ActivarBocadillo()
-    {
-        // this object was clicked
-        canvas.enabled = true;
-        yield return new WaitForSeconds(3);
-        canvas.enabled = false;
     }
 
 }
