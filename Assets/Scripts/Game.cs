@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GAme : MonoBehaviour
+public class Game : MonoBehaviour
 {
-    [SerializeField] private GameObject[] coffees;
+    [SerializeField] public Vector3 ClientStartPoint;
+
+    [SerializeField] private Coffee[] coffees;
+
+    [SerializeField] public Sprite[] walkSprites;
+    [SerializeField] public Sprite[] seatSprites;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +21,11 @@ public class GAme : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public Coffee Deseo()
+    {
+        // devolvemos un cafe aleatorio cuando un cliente tiene un deseo
+        return coffees[Random.Range(0, coffees.Length)];
     }
 }
