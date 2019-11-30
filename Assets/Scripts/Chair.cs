@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Chair : MonoBehaviour
 {
-    [SerializeField] private GameObject characterPrefab;
+    [SerializeField] private GameObject clientPrefab;
+
+    private Game game;
 
     private bool ready;
-    
+
+    private void Awake()
+    {
+        game = FindObjectOfType<Game>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +28,8 @@ public class Chair : MonoBehaviour
         if (ready)
         {
             // Instantiate at position (0, 0, 0) and zero rotation.
-            GameObject characterObject = Instantiate(characterPrefab, new Vector3(2, 0, 0), Quaternion.identity);
-            Character character = characterObject.GetComponent<Character>();
+            GameObject characterObject = Instantiate(clientPrefab, game.ClientStartPoint, Quaternion.identity);
+            Client client = characterObject.GetComponent<Client>();
         }
     }
 

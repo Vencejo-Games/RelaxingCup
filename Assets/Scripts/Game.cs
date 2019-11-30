@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GAme : MonoBehaviour
+public class Game : MonoBehaviour
 {
+    [SerializeField] public Vector3 ClientStartPoint;
+
     [SerializeField] private Coffee[] coffees;
+
+    [SerializeField] public Sprite[] walkSprites;
+    [SerializeField] public Sprite[] seatSprites;
 
     // Start is called before the first frame update
     void Start()

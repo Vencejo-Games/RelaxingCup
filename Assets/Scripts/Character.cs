@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] private Sprite walkSprite;
-    [SerializeField] private Sprite seatedSprite;
+    [SerializeField] public Sprite walkSprite;
+    [SerializeField] public Sprite seatedSprite;
 
     [SerializeField] private Transform start;
     [SerializeField] private Transform end;
