@@ -8,6 +8,8 @@ public class Chair : MonoBehaviour
 
     private bool ready;
 
+    [SerializeField] private bool facingRight;
+
     private void Awake()
     {
         game = FindObjectOfType<Game>();
@@ -26,24 +28,21 @@ public class Chair : MonoBehaviour
         if (ready)
         {
             Debug.Log("Silla ready");
-            
+
             // Obtenemos un prefab de cliente aleatorio
-            GameObject clientPrefab = game.GetClientPrefab();
-            
+            GameObject clientPrefab = game.GetClient();
+            //client.start = game.clientStartPoint;
+            //client.end = transform.position;
+
             // Instanciamos en la posicion de inicio de clientes fuera de pantalla
             GameObject characterObject = Instantiate(clientPrefab, game.clientStartPoint, Quaternion.identity);
             Client client = characterObject.GetComponent<Client>();
-            client.start.position = game.clientStartPoint;
-            client.end.position = transform.position;
+            client.start = game.clientStartPoint;
+            client.end = transform.position;
 
             // marcar silla como ocupada
             ready = false;
         }
     }
 
-    private bool isFacingRight()
-    {
-        // si esta girada manualmente es que esta mirando a derechas
-        return transform.localScale.x < 0;
-    }
 }

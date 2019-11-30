@@ -25,12 +25,12 @@ public class Game : MonoBehaviour
     public Coffee Deseo()
     {
         // devolvemos un cafe aleatorio cuando un cliente tiene un deseo
-        return coffees[Random.Range(0, coffees.Length-1)];
+        return coffees[Random.Range(0, coffees.Length)];
     }
 
-    public GameObject GetClientPrefab()
+    public GameObject GetClient()
     {
-        return clients[Random.Range(0, clients.Length-1)];
+        return clients[Random.Range(0, clients.Length)];
     }
 
 

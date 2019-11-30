@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dcee16fda344684ea7c953fce6a7aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClientStartPoint: {x: 1, y: -0.3, z: 0}
-  coffees: []
-  walkSprites:
-  - {fileID: 4803318854052287069, guid: eb2a238174a9e914a922201ad53f6e36, type: 3}
-  seatSprites:
-  - {fileID: -7293518411380913729, guid: eb2a238174a9e914a922201ad53f6e36, type: 3}
+  clientStartPoint: {x: 2, y: -0.3, z: 0}
+  coffees:
+  - {fileID: 0}
+  clients:
+  - {fileID: 0}
+  - {fileID: 0}

@@ -7,8 +7,8 @@ public class Character : MonoBehaviour
     [SerializeField] public Sprite walkSprite;
     [SerializeField] public Sprite seatedSprite;
 
-    [SerializeField] public Transform start;
-    [SerializeField] public Transform end;
+    [SerializeField] public Vector3 start;
+    [SerializeField] public Vector3 end;
 
     private float walkSpeed = 0.5f;
     private float rotationSpeed = 100f;
@@ -34,7 +34,7 @@ public class Character : MonoBehaviour
     protected virtual void Start()
     {
         // ponemos al personaje en la posicion inicial
-        transform.position = start.position;
+        transform.position = start;
         targetRotation = Quaternion.Euler(0, 0, walkRotation);
         targetJump = transform.position.y + walkJump;
 
@@ -46,6 +46,7 @@ public class Character : MonoBehaviour
     {
         if (!playerArrived())
         {
+            Debug.Log("No ha llegado");
             UpdatePosition();
             UpdateRotation();
             HasArrived();
@@ -55,7 +56,7 @@ public class Character : MonoBehaviour
     private void UpdatePosition()
     {
         // desplazar la transformada hacia el punto destino
-        transform.position = Vector3.MoveTowards(transform.position, end.position, walkSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, end, walkSpeed * Time.deltaTime);
 
         // saltito south park
         if (jumpSpeed > 0 && transform.position.y >= targetJump
@@ -71,7 +72,7 @@ public class Character : MonoBehaviour
 
 
     public void setFinalPosition(Transform t) {
-        end.position = t.position;
+        end = t.position;
     }
 
     private void UpdateRotation()
@@ -91,14 +92,13 @@ public class Character : MonoBehaviour
         // si hemos llegado a la silla cambiamos el sprite por el de sentado
         if (playerArrived())
         {
-            transform.position = end.position;
-            transform.rotation = end.rotation;
+            Debug.Log("Player Arrived");
+            transform.position = end;
             spriteRenderer.sprite = seatedSprite;
-            
         }
     }
 
     private bool playerArrived() {
-        return (transform.position.x == end.position.x);
+        return (transform.position.x == end.x);
     }
 }
