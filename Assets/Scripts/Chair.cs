@@ -27,8 +27,6 @@ public class Chair : MonoBehaviour
     {
         if (ready)
         {
-            Debug.Log("Silla ready");
-
             // Obtenemos un prefab de cliente aleatorio
             GameObject clientPrefab = game.GetClient();
             //client.start = game.clientStartPoint;
@@ -39,6 +37,8 @@ public class Chair : MonoBehaviour
             Client client = characterObject.GetComponent<Client>();
             client.start = game.clientStartPoint;
             client.end = transform.position;
+            client.end.z = -1;
+            if (facingRight) { client.flip = true; }
 
             // marcar silla como ocupada
             ready = false;

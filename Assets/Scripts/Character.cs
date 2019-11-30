@@ -10,6 +10,8 @@ public class Character : MonoBehaviour
     [SerializeField] public Vector3 start;
     [SerializeField] public Vector3 end;
 
+    public bool flip;
+
     private float walkSpeed = 0.5f;
     private float rotationSpeed = 100f;
     private float jumpSpeed = 0.1f;
@@ -95,9 +97,13 @@ public class Character : MonoBehaviour
         // si hemos llegado a la silla cambiamos el sprite por el de sentado
         if (playerArrived())
         {
-            Debug.Log("Player Arrived");
             transform.position = end;
             spriteRenderer.sprite = seatedSprite;
+            if (flip)
+            {
+                Debug.Log("FLIP");
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
         }
     }
 

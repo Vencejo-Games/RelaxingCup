@@ -43,6 +43,7 @@ public class Client : Character
     {
         StartCoroutine(ActivarBocadillo());
     }
+
     IEnumerator ActivarBocadillo()
     {
         // this object was clicked
