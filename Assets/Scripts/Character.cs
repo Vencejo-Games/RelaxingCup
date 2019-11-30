@@ -19,8 +19,7 @@ public class Character : MonoBehaviour
 
     private Quaternion targetRotation;
     private float targetJump;
-    private bool hasArrived;
-
+   
     // Componentes del Character
     private SpriteRenderer spriteRenderer;
 
@@ -43,7 +42,7 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        if (!hasArrived)
+        if (!playerArrived())
         {
             UpdatePosition();
             UpdateRotation();
@@ -68,6 +67,11 @@ public class Character : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y + jumpSpeed * Time.deltaTime, transform.position.z);
     }
 
+
+    public void setFinalPosition(Transform t) {
+        end.position = t.position;
+    }
+
     private void UpdateRotation()
     {
         // si hemos llegado a la rotacion objetivo cambiamos el target
@@ -83,13 +87,16 @@ public class Character : MonoBehaviour
     private void HasArrived()
     {
         // si hemos llegado a la silla cambiamos el sprite por el de sentado
-        if (transform.position.x == end.position.x)
+        if (playerArrived())
         {
             transform.position = end.position;
             transform.rotation = end.rotation;
             spriteRenderer.sprite = seatedSprite;
-            hasArrived = true;
+            
         }
     }
 
+    private bool playerArrived() {
+        return (transform.position.x == end.position.x);
+    }
 }

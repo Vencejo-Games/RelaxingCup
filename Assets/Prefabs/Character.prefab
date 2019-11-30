@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7710292068679905302}
   - component: {fileID: 7710292068679905300}
   - component: {fileID: 7710292068679905298}
+  - component: {fileID: 1915868726}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,15 +95,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05192c47701c47544aca21fd1d41b76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSprite: {fileID: 0}
-  seatedSprite: {fileID: 0}
+  walkSprite: {fileID: 21300000, guid: 77b1967f75a87144ba2134c556d8ea1b, type: 3}
+  seatedSprite: {fileID: 21300000, guid: 77b1967f75a87144ba2134c556d8ea1b, type: 3}
   start: {fileID: 0}
   end: {fileID: 0}
   walkSpeed: 0.5
   rotationSpeed: 100
   jumpSpeed: 0.1
   walkRotation: 3
-  walkJump: 0.008
+  walkJump: 0.005
 --- !u!61 &7710292068679905298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129,3 +130,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.32}
   m_EdgeRadius: 0
+--- !u!50 &1915868726
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710292068679905321}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -5,11 +5,12 @@ using UnityEngine;
 public class Barra : MonoBehaviour
 {
     private Canvas canvas;
+    private Character playerController;
     // Start is called before the first frame update
     void Start()
     {
         canvas = GetComponentInChildren<Canvas>();
-        Debug.Log(canvas);
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
         canvas.enabled = false;
     }
 
@@ -19,7 +20,11 @@ public class Barra : MonoBehaviour
         
     }
 
-    
+    void OnMouseDown()
+    {
+        playerController.setFinalPosition(transform);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Hola colision");
