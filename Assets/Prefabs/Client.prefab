@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3951335367530681278, guid: aaa33c4cf400bd349915138c13827aca,
+  m_Sprite: {fileID: -7799650480520040250, guid: 9de4cc4a270b26549b6cd11eba893f96,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,14 +96,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b2a46007d29345809b62df86059ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSprite: {fileID: 3951335367530681278, guid: aaa33c4cf400bd349915138c13827aca,
+  walkSprite: {fileID: -7799650480520040250, guid: 9de4cc4a270b26549b6cd11eba893f96,
     type: 3}
-  seatedSprite: {fileID: 8301311689141876104, guid: aaa33c4cf400bd349915138c13827aca,
+  seatedSprite: {fileID: -3115357578849216843, guid: 9de4cc4a270b26549b6cd11eba893f96,
     type: 3}
-  start: {x: 1.5, y: -0.3, z: 0}
-  end: {x: 1.5, y: -0.3, z: 0}
+  start: {x: 1.5, y: -0.3, z: -4.5}
+  end: {x: 1.5, y: -0.3, z: -4.5}
+  flip: 0
+  plateCoffeeObject: {fileID: 0}
+  withCoffee: 0
+  offset: {x: -0.5, y: -0.2, z: 0}
   texts:
   - "MADRO\xD1O!"
+  chair: {fileID: 0}
+  idCoffee: 0
+  tablePosition: {x: 0, y: 0, z: 0}
 --- !u!61 &8514132709975356370
 BoxCollider2D:
   m_ObjectHideFlags: 0

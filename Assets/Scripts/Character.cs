@@ -82,6 +82,8 @@ public class Character : MonoBehaviour
 
     public void setFinalPosition(Vector3 endPosition) {
         end = endPosition + offset;
+        // witer siempre en z -5
+        end.z = -5;
     }
 
     private void UpdateRotation()
@@ -102,6 +104,11 @@ public class Character : MonoBehaviour
         if (playerArrived())
         {
             transform.position = end;
+            // si es cliente lo ponemos en z -2 para que se quede detrás de la mesa
+            if(gameObject.tag != "Player")
+            {
+                transform.position = new Vector3(end.x, end.y, -2);
+            }
             transform.rotation = Quaternion.identity;
             spriteRenderer.sprite = seatedSprite;
             if (flip)

@@ -46,6 +46,7 @@ public class InstantiateCoffees : MonoBehaviour
 
     public void GenerateColacao()
     {
+        DestroyPreviousCoffee();
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 2;
         playerWithCoffee(obj);
@@ -54,10 +55,11 @@ public class InstantiateCoffees : MonoBehaviour
     // marcamos que el jugador lleva coffee en la bandeja
     private void playerWithCoffee(GameObject newCoffee)
     {
+        // modificamos z -6 para coffee en la bandeja
+        newCoffee.transform.position = new Vector3(newCoffee.transform.position.x, newCoffee.transform.position.y, -6);
         // guardar referencia al coffee creado para destruirlo
         player.plateCoffeeObject = newCoffee;
         player.withCoffee = true;
-        playerWithCoffee(obj);
     }
 
     private void DestroyPreviousCoffee()

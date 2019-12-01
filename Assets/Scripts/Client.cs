@@ -67,7 +67,7 @@ public class Client : Character
                     coffeInTable = coffeeObj;
                     // dejamos huerfano al coffee para poder ponerlo en la mesa
                     coffeeObj.transform.parent = null;
-                    // lo colocamos en la posicion guardada de la mesa segun silla
+                    // lo colocamos en la posicion guardada de la mesa segun silla (coge z -4 de los puntos)
                     coffeeObj.transform.position = tablePosition;
                     // el camarero ya no tiene cafe en la bandeja
                     playerController.withCoffee = false;
@@ -105,12 +105,17 @@ public class Client : Character
     IEnumerator Pirarse()
     {
         // Tiempo de espera hasta irse
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(15);
         // Destruir su coffee en la mesa
         Destroy(coffeInTable);
         // Sprite de andar
         spriteRenderer.sprite = walkSprite;
-        // Que se salga fuera de pantalla
+        if (!flip)
+        {
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+        }
+        // Que se salga fuera de pantalla (z -4.5 para client walking)
+        transform.position = new Vector3(transform.position.x, transform.position.y, -4.5f);
         end = game.clientStartPoint;
         // Esperamos a que le de tiempo a salir
         yield return new WaitForSeconds(5);

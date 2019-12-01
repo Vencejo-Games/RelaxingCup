@@ -38,8 +38,9 @@ public class Chair : MonoBehaviour
             // Configurar los parámetros del cliente
             Client client = characterObject.GetComponent<Client>();
             client.start = game.clientStartPoint;
+            // clients walking a z -4.5 para que pasen por delante de sillas y mesas
             client.end = transform.position;
-            client.end.z = -1;
+            client.end.z = -4.5f;
             client.tablePosition = table.transform.position;
             client.chair = this;
 

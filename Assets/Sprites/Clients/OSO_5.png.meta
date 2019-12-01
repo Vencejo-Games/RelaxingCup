@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0f416f2162d275440b5843e0c1884f3c
+guid: 1e9c188ba1a182548916a06c59b0df2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7616622597209313419
-    second: OSO_4_0
+      213: -992601107291688044
+    second: OSO_5_0
   - first:
-      213: -5698848419272415953
-    second: OSO_4_1
+      213: 2882934991859751068
+    second: OSO_5_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OSO_4_0
+      name: OSO_5_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eec7cc00bc49f954489a534a5ef14e60
-      internalID: -7616622597209313419
+      spriteID: e0fab52b8e730ac4ea557cb4be155f0d
+      internalID: -992601107291688044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OSO_4_1
+      name: OSO_5_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40811fca4b0370c42a1d56d05a27abba
-      internalID: -5698848419272415953
+      spriteID: 076e8e2111c1e2941bc494e934628352
+      internalID: 2882934991859751068
       vertices: []
       indices: 
       edges: []
