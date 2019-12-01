@@ -2728,13 +2728,13 @@ PrefabInstance:
         type: 3}
       propertyPath: walkSprite
       value: 
-      objectReference: {fileID: -1273808185982400402, guid: 4e8bba1af2b5d2f4faaf67fcf344dbcb,
+      objectReference: {fileID: -3584332028132570374, guid: 35767db2f08681648836272cb3175623,
         type: 3}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: seatedSprite
       value: 
-      objectReference: {fileID: -4335162805942528650, guid: 4e8bba1af2b5d2f4faaf67fcf344dbcb,
+      objectReference: {fileID: -3427962041485414959, guid: 35767db2f08681648836272cb3175623,
         type: 3}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -3039,7 +3039,7 @@ PrefabInstance:
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: Traigo magdalenas para acompaniar mi cafe.
+      value: Traigo magdalenas.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
