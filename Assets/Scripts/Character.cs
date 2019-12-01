@@ -108,6 +108,7 @@ public class Character : MonoBehaviour
             if(gameObject.tag != "Player")
             {
                 transform.position = new Vector3(end.x, end.y, -2);
+                transform.position = new Vector3(end.x, end.y, -2);
             }
             transform.rotation = Quaternion.identity;
             spriteRenderer.sprite = seatedSprite;

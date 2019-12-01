@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Game : MonoBehaviour
 
     private AudioSource audioSource;
 
+    private bool quit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +33,11 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        quit = Input.GetButtonDown("Cancel");
+        if (quit)
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     public Coffee Deseo()
@@ -49,10 +56,12 @@ public class Game : MonoBehaviour
             int i = Random.Range(0, clients.Length);
             if (!clientLock[i])
             {
+                // Guardar en PlayerPrefs para galeria
+                PlayerPrefs.SetInt(""+i, i);
+
                 found = true;
                 clientLock[i] = true;
                 return clients[i];
-                
             }
         }
         return clients[0];

@@ -110,7 +110,6 @@ public class Client : Character
         canvas1.transform.GetChild(0).gameObject.SetActive(true); //bocadillo 
         canvas1.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);  //foto cafe
         canvas1.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = coffee.getSprite(idCoffee);
-        Debug.Log(coffee.getSprite(idCoffee));
         canvas1.transform.GetChild(1).gameObject.SetActive(false);  //texto
         yield return new WaitForSeconds(4);
         canvas1.enabled = false;
