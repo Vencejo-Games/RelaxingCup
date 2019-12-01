@@ -200,6 +200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 4768154661918010437, guid: b142a08f85fb5f24bbadf2f5d3e0ac27,
@@ -224,6 +229,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "\xBFMe haces una foto?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Es mi tercera visita a Madrid. Me encanta.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -596,6 +611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: -1053362119202515677, guid: bbb499b98122fe04ea628bde42c8213b,
@@ -620,6 +640,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Me renta mazo la Plaza Mayor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: De Madrid al cielo.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -729,6 +759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 5342303785080606908, guid: ea3dff11152c7394688e0596bb5b7caa,
@@ -743,6 +778,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "\xA1Hay un barrio a mi nombre!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Esta guay, pero prefiero Malasana.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -1037,6 +1082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: -1273808185982400402, guid: 4e8bba1af2b5d2f4faaf67fcf344dbcb,
@@ -1061,6 +1111,21 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Hete aqui mi fermosa creacion, Madrid.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Deleitense visitando esta plaza.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Deleitoso brebaje.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -1176,6 +1241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: -7799650480520040250, guid: 9de4cc4a270b26549b6cd11eba893f96,
@@ -1190,6 +1260,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Ay Pedro, que siempre me llega tarde...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Tomare un cafe mientras espero a Almodovar.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -1311,6 +1391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: identificador
       value: 13
       objectReference: {fileID: 0}
@@ -1326,6 +1411,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -441194356336073067, guid: e76bb95f92cd1944984aaadfccee4bcd,
         type: 3}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Deliciosa relaxing cup of cafe con leche.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Do you espikinglis?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: My name is Annie Bottle.
+      objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1434,6 +1534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: identificador
       value: 12
       objectReference: {fileID: 0}
@@ -1449,6 +1554,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6868623432960965983, guid: 68bb51e2efb5fc3438c1f2ac5eac4fff,
         type: 3}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Vengo de la carrera de tacones.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: 'Madrid es mi mayor orgullo. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Me estan matando los tacones.
+      objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1557,6 +1677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 846207748645620969, guid: 87915daa03d85224c9efc421fedc9e11,
@@ -1571,6 +1696,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Shhhh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: "\xA1\xA1HALA MADRID!!"
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -1674,6 +1809,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 1846238491443467371, guid: 85ff82d1643346147bf1b98b920690fa,
@@ -1688,6 +1828,21 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Voy a la Plaza Mayor pa llamar tu atencion.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Ontas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: El mas pegao de Madrid.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -1946,6 +2101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: -1031979252052398584, guid: 617b07aab79b41544bbd0fe9cb04bca6,
@@ -1965,6 +2125,16 @@ PrefabInstance:
         type: 3}
       propertyPath: end.z
       value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Yo soy Madronio.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Madronio.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -2234,6 +2404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 6285269982893514071, guid: 27ffe21a8d32d3f4589cfa66a6f727c5,
@@ -2248,6 +2423,21 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Soy un gnomo y aqui en Madrid soy feliz...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Siempre estoy de buen humor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Mwahahahahah!
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -2521,6 +2711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: -1273808185982400402, guid: 4e8bba1af2b5d2f4faaf67fcf344dbcb,
@@ -2535,6 +2730,21 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: El rico come, el pobre se alimenta.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: Poderoso caballero es Don Dinero.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Vine a comerme un bocadillo mas grande que la nariz de Gongora.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -2638,6 +2848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 2922924543330441032, guid: eaa083f958604a14cb29dfd8e32b10ac,
@@ -2662,6 +2877,21 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: Groawhl!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: RAAAAWR!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Rawr!
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -2771,6 +3001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
+      propertyPath: texts.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
       propertyPath: walkSprite
       value: 
       objectReference: {fileID: 9182874835842790290, guid: e2349496080f9f149b2c373c0fc3e686,
@@ -2785,6 +3020,16 @@ PrefabInstance:
         type: 3}
       propertyPath: identificador
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[1]
+      value: "\xA1Viva Madrid, libre y plural!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[0]
+      value: Traigo magdalenas para acompaniar mi cafe.
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}

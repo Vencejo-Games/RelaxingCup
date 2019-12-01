@@ -107,7 +107,7 @@ public class Client : Character
         canvas1.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = coffee.getSprite(idCoffee);
         Debug.Log(coffee.getSprite(idCoffee));
         canvas1.transform.GetChild(1).gameObject.SetActive(false);  //texto
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         canvas1.enabled = false;
     }
 
@@ -131,7 +131,7 @@ public class Client : Character
     {
         canvas1.transform.GetChild(1).gameObject.SetActive(false);
         // Tiempo de espera hasta irse
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(20);
         // Destruir su coffee en la mesa
         Destroy(coffeInTable);
         // Sprite de andar
@@ -148,7 +148,7 @@ public class Client : Character
         // Liberamos la silla
         chair.Free();
         // Margen de tiempo hasta que entre otro cliente
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         // Avisamos al game manager para que libere el client
         game.LiberaCliente(identificador);
         // GG!
