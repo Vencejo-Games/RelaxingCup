@@ -3036,11 +3036,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7408526909256986590, guid: 947fb1958f926a04e88bdc35b62b5f2b,
         type: 3}
-      propertyPath: clients.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 7408526909256986590, guid: 947fb1958f926a04e88bdc35b62b5f2b,
-        type: 3}
       propertyPath: clients.Array.data[0]
       value: 
       objectReference: {fileID: 1332853559}
@@ -3069,11 +3064,6 @@ PrefabInstance:
       propertyPath: clients.Array.data[5]
       value: 
       objectReference: {fileID: 341037010}
-    - target: {fileID: 7408526909256986590, guid: 947fb1958f926a04e88bdc35b62b5f2b,
-        type: 3}
-      propertyPath: clientStartPoint.z
-      value: -4.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7408526909256986590, guid: 947fb1958f926a04e88bdc35b62b5f2b,
         type: 3}
       propertyPath: clients.Array.data[6]

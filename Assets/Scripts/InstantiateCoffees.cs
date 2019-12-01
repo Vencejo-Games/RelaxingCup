@@ -10,8 +10,11 @@ public class InstantiateCoffees : MonoBehaviour
 
     private Transform spawnPosition;
 
+    private Game game;
+
     private void Awake()
     {
+        game = FindObjectOfType<Game>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
     }
 
@@ -33,6 +36,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 0;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     public void GenerateCoffeeSolo()
@@ -42,6 +46,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 1;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     public void GenerateColacao()
@@ -50,6 +55,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 2;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     public void GenerateAgua()
@@ -58,6 +64,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 3;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     public void GenerateCocido()
@@ -66,6 +73,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 4;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     public void GenerateBocadillo()
@@ -74,6 +82,7 @@ public class InstantiateCoffees : MonoBehaviour
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 5;
         playerWithCoffee(obj);
+        game.PlayButtonSound();
     }
 
     // marcamos que el jugador lleva coffee en la bandeja

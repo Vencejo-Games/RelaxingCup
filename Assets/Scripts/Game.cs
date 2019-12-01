@@ -12,9 +12,16 @@ public class Game : MonoBehaviour
 
     private bool[] clientLock;
 
+    [SerializeField] AudioClip buttonSound;
+    [SerializeField] AudioClip clientSound;
+    [SerializeField] AudioClip ambientSound;
+
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         clientLock = new bool[clients.Length];
     }
 
@@ -52,6 +59,18 @@ public class Game : MonoBehaviour
     public void LiberaCliente(int i)
     {
         clientLock[i] = false;
+    }
+
+    public void PlayButtonSound()
+    {
+        audioSource.clip = buttonSound;
+        audioSource.Play();
+    }
+
+    public void PlayClientSound()
+    {
+        audioSource.clip = clientSound;
+        audioSource.Play();
     }
 
 }

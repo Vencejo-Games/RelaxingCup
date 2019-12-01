@@ -50,6 +50,7 @@ public class Client : Character
     void OnMouseDown()
     {
         playerController.setFinalPosition(transform.position);
+        game.PlayClientSound();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -128,6 +129,7 @@ public class Client : Character
 
     IEnumerator Pirarse()
     {
+        canvas1.transform.GetChild(1).gameObject.SetActive(false);
         // Tiempo de espera hasta irse
         yield return new WaitForSeconds(15);
         // Destruir su coffee en la mesa
