@@ -100,6 +100,10 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 8a379d345f6d34548923be31e0b46829, type: 2}
   - {fileID: 7400000, guid: a1ba2d897d238c6439d8f17e49d31342, type: 2}
   - {fileID: 7400000, guid: 2f9f6b7fd39e022499c3265a5987e0c1, type: 2}
+  sprites:
+  - {fileID: 21300000, guid: e2a15192394e0d8488997743c2599929, type: 3}
+  - {fileID: 21300000, guid: 9ae22c1f60c06464cb98fa2d2ff08e98, type: 3}
+  - {fileID: 21300000, guid: 72fd7070f6a3c8f4894217249096ee9d, type: 3}
 --- !u!95 &7441903092678913779
 Animator:
   serializedVersion: 3

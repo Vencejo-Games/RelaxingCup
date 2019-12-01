@@ -24,4 +24,8 @@ public class Coffee : MonoBehaviour
         animatorOverrideController["coffee"] = animations[id];
     }
 
+    public Sprite getSprite(int i) {
+        return sprites[i];
+    }
+
 }

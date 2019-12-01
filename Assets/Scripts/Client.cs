@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Client : Character
 {
@@ -12,7 +13,8 @@ public class Client : Character
     public int idCoffee;
 
     // Componentes del Character
-    private Canvas canvas;
+    private Canvas canvas1;
+   
     
     private Character playerController;
 
@@ -26,7 +28,7 @@ public class Client : Character
     protected override void Awake()
     {
         base.Awake();
-        canvas = GetComponentInChildren<Canvas>();
+        canvas1 = GetComponentInChildren<Canvas>();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
     }
 
@@ -34,7 +36,7 @@ public class Client : Character
     protected override void Start()
     {
         base.Start();
-        canvas.enabled = false;
+        canvas1.enabled = false;
         coffee = game.Deseo();
         idCoffee = coffee.id;
     }
@@ -83,23 +85,45 @@ public class Client : Character
             else
             {
                 // mostrar deseo
-                StartCoroutine(ActivarBocadillo());
+                StartCoroutine(ActivarDeseo());
             }
         }
         else
         {
-            // TODO Mientras no se va mostrar texto
+            StartCoroutine(ActivarTexto());
+
         }
 
         
     }
 
-    IEnumerator ActivarBocadillo()
+    IEnumerator ActivarDeseo()
     {
         // this object was clicked
-        canvas.enabled = true;
+        canvas1.enabled = true;
+        canvas1.transform.GetChild(0).gameObject.SetActive(true); //bocadillo 
+        canvas1.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);  //foto cafe
+        canvas1.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = coffee.getSprite(idCoffee);
+        Debug.Log(coffee.getSprite(idCoffee));
+        canvas1.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);  //texto
         yield return new WaitForSeconds(3);
-        canvas.enabled = false;
+        canvas1.enabled = false;
+    }
+
+    IEnumerator ActivarTexto()
+    {
+        // this object was clicked
+        canvas1.enabled = true;
+        canvas1.transform.GetChild(0).gameObject.SetActive(true); //bocadillo 
+        canvas1.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);  //foto cafe
+        canvas1.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);  //texto
+        canvas1.transform.GetChild(0).GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = chooseRandomText();
+        yield return new WaitForSeconds(6);
+        canvas1.enabled = false;
+    }
+
+    private string chooseRandomText() {
+        return texts[Random.Range(0, texts.Length)];
     }
 
     IEnumerator Pirarse()
