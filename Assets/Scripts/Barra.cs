@@ -6,6 +6,7 @@ public class Barra : MonoBehaviour
 {
     private Canvas canvas;
     private Character playerController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,6 @@ public class Barra : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hola colision");
         if (collision.tag == "Player") {
             canvas.enabled = true;
         }

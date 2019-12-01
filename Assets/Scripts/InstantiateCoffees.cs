@@ -6,7 +6,14 @@ public class InstantiateCoffees : MonoBehaviour
 {
     public GameObject coffee;
 
+    private Character player;
+
     private Transform spawnPosition;
+
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -22,20 +29,43 @@ public class InstantiateCoffees : MonoBehaviour
 
     public void GenerateCoffeeSolo()
     {
+        // Destruir café anterior en caso necesario
+        DestroyPreviousCoffee();
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 1;
-        
+        playerWithCoffee(obj);
     }
 
     public void GenerateCoffeeConLeche()
     {
+        DestroyPreviousCoffee();
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 0;
+        playerWithCoffee(obj);
     }
 
     public void GenerateColacao()
     {
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 2;
+        playerWithCoffee(obj);
     }
+
+    // marcamos que el jugador lleva coffee en la bandeja
+    private void playerWithCoffee(GameObject newCoffee)
+    {
+        // guardar referencia al coffee creado para destruirlo
+        player.plateCoffeeObject = newCoffee;
+        player.withCoffee = true;
+    }
+
+    private void DestroyPreviousCoffee()
+    {
+        if (player.withCoffee)
+        {
+            Destroy(player.plateCoffeeObject);
+            player.withCoffee = false;
+        }
+    }
+
 }

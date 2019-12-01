@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: eb2a238174a9e914a922201ad53f6e36
+guid: bbb499b98122fe04ea628bde42c8213b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4803318854052287069
-    second: CarlosIII_1_0
+      213: -1053362119202515677
+    second: negro_2_0
   - first:
-      213: -7293518411380913729
-    second: CarlosIII_1_1
+      213: -1327020681935821752
+    second: negro_2_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CarlosIII_1_0
+      name: negro_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 493ffe1c92d7bf441ac8b12701f74006
-      internalID: 4803318854052287069
+      spriteID: 0cab81c60c9f9544c9177fb51b564a36
+      internalID: -1053362119202515677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarlosIII_1_1
+      name: negro_2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269eaeaafa3ae8540bf363d73c3d6f03
-      internalID: -7293518411380913729
+      spriteID: 5048a445ef4e44746ac883b54484e403
+      internalID: -1327020681935821752
       vertices: []
       indices: 
       edges: []

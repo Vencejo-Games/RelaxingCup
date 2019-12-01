@@ -104,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2331572563977614959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6287, y: -0.2644, z: 0}
+  m_LocalPosition: {x: 0.646, y: -0.171, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8157698100085114886}
@@ -169,7 +169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8795901458588279812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7403, y: -0.2644, z: 0}
+  m_LocalPosition: {x: 0.714, y: -0.169, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8157698100085114886}
@@ -185,17 +185,17 @@ PrefabInstance:
     - target: {fileID: 4986374258479151326, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_Name
-      value: Silla
+      value: Silla1_der
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.822
+      value: 0.802
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.34
+      value: -0.273
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
@@ -242,12 +242,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -949494278689288594, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
+        type: 3}
+      propertyPath: table
+      value: 
+      objectReference: {fileID: 8795901458588279812}
     - target: {fileID: 4986374258479151325, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 58632933d08aa844dbde5761f6cc6bd0,
         type: 3}
+    - target: {fileID: 4986374258479151325, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9204fcc6bc66f49aa1b7c0e377f8aa, type: 3}
 --- !u!4 &6393828656072761714 stripped
@@ -266,17 +276,17 @@ PrefabInstance:
     - target: {fileID: 4986374258479151326, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_Name
-      value: SillaGirada
+      value: Silla1_izq
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.592
+      value: 0.559
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.345
+      value: -0.267
       objectReference: {fileID: 0}
     - target: {fileID: 4986374258479151324, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
@@ -323,12 +333,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -949494278689288594, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
+        type: 3}
+      propertyPath: facingRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -949494278689288594, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
+        type: 3}
+      propertyPath: table
+      value: 
+      objectReference: {fileID: 2331572563977614959}
     - target: {fileID: 4986374258479151325, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c3992831c74d4f94a978240c5287792b,
         type: 3}
+    - target: {fileID: 4986374258479151325, guid: be9204fcc6bc66f49aa1b7c0e377f8aa,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9204fcc6bc66f49aa1b7c0e377f8aa, type: 3}
 --- !u!4 &3922303889956714720 stripped

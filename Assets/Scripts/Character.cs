@@ -22,10 +22,13 @@ public class Character : MonoBehaviour
     private float targetJump;
    
     // Componentes del Character
-    private SpriteRenderer spriteRenderer;
+    protected SpriteRenderer spriteRenderer;
     private GameObject sombra;
 
     protected Game game;
+
+    public GameObject plateCoffeeObject;
+    public bool withCoffee;
 
     protected virtual void Awake()
     {
@@ -50,7 +53,6 @@ public class Character : MonoBehaviour
     {
         if (!playerArrived())
         {
-            Debug.Log("No ha llegado");
             UpdatePosition();
             UpdateRotation();
             HasArrived();
@@ -98,10 +100,10 @@ public class Character : MonoBehaviour
         if (playerArrived())
         {
             transform.position = end;
+            transform.rotation = Quaternion.identity;
             spriteRenderer.sprite = seatedSprite;
             if (flip)
             {
-                Debug.Log("FLIP");
                 transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
             }
         }

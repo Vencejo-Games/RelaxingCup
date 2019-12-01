@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Chair : MonoBehaviour
 {
+    [SerializeField] private bool facingRight;
+
+    [SerializeField] private GameObject table;
+
     private Game game;
 
     private bool ready;
-
-    [SerializeField] private bool facingRight;
 
     private void Awake()
     {
@@ -29,20 +31,29 @@ public class Chair : MonoBehaviour
         {
             // Obtenemos un prefab de cliente aleatorio
             GameObject clientPrefab = game.GetClient();
-            //client.start = game.clientStartPoint;
-            //client.end = transform.position;
 
             // Instanciamos en la posicion de inicio de clientes fuera de pantalla
             GameObject characterObject = Instantiate(clientPrefab, game.clientStartPoint, Quaternion.identity);
+
+            // Configurar los parámetros del cliente
             Client client = characterObject.GetComponent<Client>();
             client.start = game.clientStartPoint;
             client.end = transform.position;
             client.end.z = -1;
+            client.tablePosition = table.transform.position;
+            client.chair = this;
+
+            // hacemos flip del cliente si la silla mira hacia la derecha
             if (facingRight) { client.flip = true; }
 
             // marcar silla como ocupada
             ready = false;
         }
+    }
+
+    public void Free()
+    {
+        ready = true;
     }
 
 }
