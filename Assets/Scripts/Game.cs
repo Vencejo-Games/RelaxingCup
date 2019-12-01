@@ -15,6 +15,8 @@ public class Game : MonoBehaviour
     [SerializeField] AudioClip buttonSound;
     [SerializeField] AudioClip clientSound;
     [SerializeField] AudioClip ambientSound;
+    [SerializeField] AudioClip errorSound;
+    [SerializeField] AudioClip yupiSound;
 
     private AudioSource audioSource;
 
@@ -70,6 +72,18 @@ public class Game : MonoBehaviour
     public void PlayClientSound()
     {
         audioSource.clip = clientSound;
+        audioSource.Play();
+    }
+
+    public void PlayErrorSound()
+    {
+        audioSource.clip = errorSound;
+        audioSource.Play();
+    }
+
+    public void PlayYupiSound()
+    {
+        audioSource.clip = yupiSound;
         audioSource.Play();
     }
 

@@ -66,6 +66,8 @@ MonoBehaviour:
   buttonSound: {fileID: 8300000, guid: 4d066334dd74c5c4c9a28068d2f329e4, type: 3}
   clientSound: {fileID: 8300000, guid: 5f9ccb2d0bca1394ca67f90c716067bb, type: 3}
   ambientSound: {fileID: 8300000, guid: 4bcc0db9f7d0c084ba0ec0db8c16bdc9, type: 3}
+  errorSound: {fileID: 8300000, guid: 87352696920c7204e80e6475410540b3, type: 3}
+  yupiSound: {fileID: 8300000, guid: b11d14c405004604199931c4152e8311, type: 3}
 --- !u!82 &1464993572
 AudioSource:
   m_ObjectHideFlags: 0

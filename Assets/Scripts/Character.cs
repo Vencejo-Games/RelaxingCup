@@ -115,10 +115,9 @@ public class Character : MonoBehaviour
             {
                 transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
 
+                // flipear el canvas del bocadillo
                 Canvas c = transform.GetChild(0).GetComponent<Canvas>();
                 RectTransform t = c.GetComponent<RectTransform>();
-
-                //t.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
                 t.rotation = new Quaternion(t.rotation.x, 180.0f, t.rotation.z, 1);
             }
         }

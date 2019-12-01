@@ -541,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 8514132709975356371, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: m_Name
-      value: Negro
+      value: LoriMoney
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356367, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -612,7 +612,7 @@ PrefabInstance:
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: texts.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
@@ -644,12 +644,22 @@ PrefabInstance:
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: texts.Array.data[1]
-      value: Me renta mazo la Plaza Mayor.
+      value: Mercadona o k ase
       objectReference: {fileID: 0}
     - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}
       propertyPath: texts.Array.data[0]
-      value: De Madrid al cielo.
+      value: Lori Money Lori Money.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[2]
+      value: '#relajante'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514132709975356369, guid: c3821e49f7f5d4144aa30600d19bce7f,
+        type: 3}
+      propertyPath: texts.Array.data[3]
+      value: Ola k ase
       objectReference: {fileID: 0}
     - target: {fileID: 7377990023073001564, guid: c3821e49f7f5d4144aa30600d19bce7f,
         type: 3}

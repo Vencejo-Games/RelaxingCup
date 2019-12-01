@@ -66,6 +66,7 @@ public class Client : Character
                 // Comprobar que es el deseo del cliente
                 if (currentCoffee.id == coffee.id)
                 {
+                    game.PlayYupiSound();
                     // guardamos referencia del coffee para poder destruirlo cuando se vaya
                     coffeInTable = coffeeObj;
                     // dejamos huerfano al coffee para poder ponerlo en la mesa
@@ -81,7 +82,12 @@ public class Client : Character
                     // TODO Lanzar Timer para levantarse de la silla
                     StartCoroutine(Pirarse());
                 }
-
+                else
+                {
+                    game.PlayErrorSound();
+                    // mostrar deseo
+                    StartCoroutine(ActivarDeseo());
+                }
             }
             else
             {
@@ -94,7 +100,6 @@ public class Client : Character
             StartCoroutine(ActivarTexto());
 
         }
-
         
     }
 
@@ -129,9 +134,10 @@ public class Client : Character
 
     IEnumerator Pirarse()
     {
-        canvas1.transform.GetChild(1).gameObject.SetActive(false);
         // Tiempo de espera hasta irse
         yield return new WaitForSeconds(20);
+        // Desactivar bocadillo
+        canvas1.transform.GetChild(1).gameObject.SetActive(false);
         // Destruir su coffee en la mesa
         Destroy(coffeInTable);
         // Sprite de andar
@@ -139,7 +145,12 @@ public class Client : Character
         if (!flip)
         {
             transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            // flipear bocadillo para los que hemos girado
+            Canvas c = transform.GetChild(0).GetComponent<Canvas>();
+            RectTransform t = c.GetComponent<RectTransform>();
+            t.rotation = new Quaternion(t.rotation.x, 180.0f, t.rotation.z, 1);
         }
+        
         // Que se salga fuera de pantalla (z -4.5 para client walking)
         transform.position = new Vector3(transform.position.x, transform.position.y, -4.5f);
         end = game.clientStartPoint;
