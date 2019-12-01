@@ -26,6 +26,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("15", 15);
         audioSource = GetComponent<AudioSource>();
         clientLock = new bool[clients.Length];
     }
@@ -57,7 +58,7 @@ public class Game : MonoBehaviour
             if (!clientLock[i])
             {
                 // Guardar en PlayerPrefs para galeria
-                PlayerPrefs.SetInt(""+i, i);
+                PlayerPrefs.SetInt(""+(i+1), i+1);
 
                 found = true;
                 clientLock[i] = true;
