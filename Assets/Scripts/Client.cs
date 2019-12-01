@@ -47,7 +47,7 @@ public class Client : Character
     
     void OnMouseDown()
     {
-        playerController.setFinalPosition(transform);
+        playerController.setFinalPosition(transform.position);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

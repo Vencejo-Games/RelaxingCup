@@ -6,6 +6,7 @@ public class Coffee : MonoBehaviour
 {
     [SerializeField] public int id;
     [SerializeField] private AnimationClip[] animations;
+    [SerializeField] private Sprite[] sprites;
 
     protected Animator animator;
     protected AnimatorOverrideController animatorOverrideController;

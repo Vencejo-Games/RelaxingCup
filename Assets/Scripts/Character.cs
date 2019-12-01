@@ -30,6 +30,8 @@ public class Character : MonoBehaviour
     public GameObject plateCoffeeObject;
     public bool withCoffee;
 
+    [SerializeField] private Vector3 offset = new Vector3(-0.2f, -0.1f, 0f);
+
     protected virtual void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -78,8 +80,8 @@ public class Character : MonoBehaviour
     }
 
 
-    public void setFinalPosition(Transform t) {
-        end = t.position;
+    public void setFinalPosition(Vector3 endPosition) {
+        end = endPosition + offset;
     }
 
     private void UpdateRotation()
