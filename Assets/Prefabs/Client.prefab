@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0649, y: 0.0512}
-  m_SizeDelta: {x: 0.15, y: 0.07419}
+  m_AnchoredPosition: {x: 0.00227, y: 0.02044}
+  m_SizeDelta: {x: 0.28432, y: 0.1357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7119378344154619207
 CanvasRenderer:
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.025
-  m_fontSizeBase: 0.025
+  m_fontSize: 0.032
+  m_fontSizeBase: 0.032
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.0034845471, y: 0, z: -0.12849265, w: -0.058801696}
+  m_margin: {x: 0.0034845471, y: 0, z: -0.0024761558, w: 0.005561501}
   m_textInfo:
     textComponent: {fileID: 7377990023073001564}
     characterCount: 4
@@ -337,6 +337,7 @@ MonoBehaviour:
   offset: {x: -0.2, y: -0.1, z: 0}
   texts:
   - "MADRO\xD1O!"
+  identificador: 0
   chair: {fileID: 0}
   idCoffee: 0
   tablePosition: {x: 0, y: 0, z: 0}
