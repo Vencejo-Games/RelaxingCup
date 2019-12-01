@@ -5,8 +5,8 @@ using UnityEngine;
 public class Coffee : MonoBehaviour
 {
     [SerializeField] public int id;
-    [SerializeField] private AnimationClip[] animations;
-    [SerializeField] private Sprite[] sprites;
+    [SerializeField] public AnimationClip[] animations;
+    [SerializeField] public Sprite[] sprites;
 
     protected Animator animator;
     protected AnimatorOverrideController animatorOverrideController;

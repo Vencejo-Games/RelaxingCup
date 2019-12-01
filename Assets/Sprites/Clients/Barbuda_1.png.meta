@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: db1963756ec66d34d926117f8d1a9b3a
+guid: 68bb51e2efb5fc3438c1f2ac5eac4fff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3902205848913803175
-    second: "Malasa\xF1a_1_0"
+      213: 8358261986455767910
+    second: Barbuda_1_0
   - first:
-      213: 2390126137648249337
-    second: "Malasa\xF1a_1_1"
+      213: -6868623432960965983
+    second: Barbuda_1_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Malasa\xF1a_1_0"
+      name: Barbuda_1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0506d38bfd9039c4c937053934684310
-      internalID: -3902205848913803175
+      spriteID: d13d401ff2719c241886f609e2d88b98
+      internalID: 8358261986455767910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Malasa\xF1a_1_1"
+      name: Barbuda_1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4930c1dbfae81db4ca6f69cfca2598ce
-      internalID: 2390126137648249337
+      spriteID: 8a2e942c02e5cf542a4225241ba4979b
+      internalID: -6868623432960965983
       vertices: []
       indices: 
       edges: []

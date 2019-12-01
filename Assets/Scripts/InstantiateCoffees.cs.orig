@@ -27,20 +27,20 @@ public class InstantiateCoffees : MonoBehaviour
         
     }
 
-    public void GenerateCoffeeConLeche()
-    {
-        DestroyPreviousCoffee();
-        GameObject obj = Instantiate(coffee, spawnPosition);
-        obj.GetComponent<Coffee>().id = 0;
-        playerWithCoffee(obj);
-    }
-
     public void GenerateCoffeeSolo()
     {
         // Destruir café anterior en caso necesario
         DestroyPreviousCoffee();
         GameObject obj = Instantiate(coffee, spawnPosition);
         obj.GetComponent<Coffee>().id = 1;
+        playerWithCoffee(obj);
+    }
+
+    public void GenerateCoffeeConLeche()
+    {
+        DestroyPreviousCoffee();
+        GameObject obj = Instantiate(coffee, spawnPosition);
+        obj.GetComponent<Coffee>().id = 0;
         playerWithCoffee(obj);
     }
 
@@ -52,30 +52,6 @@ public class InstantiateCoffees : MonoBehaviour
         playerWithCoffee(obj);
     }
 
-    public void GenerateAgua()
-    {
-        DestroyPreviousCoffee();
-        GameObject obj = Instantiate(coffee, spawnPosition);
-        obj.GetComponent<Coffee>().id = 3;
-        playerWithCoffee(obj);
-    }
-
-    public void GenerateCocido()
-    {
-        DestroyPreviousCoffee();
-        GameObject obj = Instantiate(coffee, spawnPosition);
-        obj.GetComponent<Coffee>().id = 4;
-        playerWithCoffee(obj);
-    }
-
-    public void GenerateBocadillo()
-    {
-        DestroyPreviousCoffee();
-        GameObject obj = Instantiate(coffee, spawnPosition);
-        obj.GetComponent<Coffee>().id = 5;
-        playerWithCoffee(obj);
-    }
-
     // marcamos que el jugador lleva coffee en la bandeja
     private void playerWithCoffee(GameObject newCoffee)
     {
@@ -84,6 +60,10 @@ public class InstantiateCoffees : MonoBehaviour
         // guardar referencia al coffee creado para destruirlo
         player.plateCoffeeObject = newCoffee;
         player.withCoffee = true;
+<<<<<<< HEAD
+=======
+       
+>>>>>>> b5497ec70d84e3d436ba87097682c193e0e55a6a
     }
 
     private void DestroyPreviousCoffee()

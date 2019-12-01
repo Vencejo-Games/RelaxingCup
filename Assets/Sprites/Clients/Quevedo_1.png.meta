@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 972fdd6b7adec8a41b8f9c3a8978a729
+guid: 35767db2f08681648836272cb3175623
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 741896799410599453
-    second: Comida_ICON_2_0
+      213: -3584332028132570374
+    second: Quevedo_1_0
   - first:
-      213: -1360434642146117239
-    second: Comida_ICON_2_1
-  - first:
-      213: 730170708039579000
-    second: Comida_ICON_2_2
-  - first:
-      213: -2356370614256549172
-    second: Comida_ICON_2_3
-  - first:
-      213: 1175903792657132888
-    second: Comida_ICON_2_4
-  - first:
-      213: 6275534878997634421
-    second: Comida_ICON_2_5
+      213: -3427962041485414959
+    second: Quevedo_1_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Comida_ICON_2_0
+      name: Quevedo_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 12
-        height: 9
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28db02f699036be4bbc1bb43f8602ba4
-      internalID: 741896799410599453
+      spriteID: 1adc40fc10716bc4db1b5a2c9fea17d3
+      internalID: -3584332028132570374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Comida_ICON_2_1
+      name: Quevedo_1_1
       rect:
         serializedVersion: 2
-        x: 12
+        x: 16
         y: 0
-        width: 12
-        height: 9
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,92 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bddeba69feb11b4e96e3ea704dc2077
-      internalID: -1360434642146117239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Comida_ICON_2_2
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5094cc46227e0d4781aa92c37eac8fc
-      internalID: 730170708039579000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Comida_ICON_2_3
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 0
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b170a9819396434fa382ca75d52d5f2
-      internalID: -2356370614256549172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Comida_ICON_2_4
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a25630e1d006b8844a7fb4a0f3c72666
-      internalID: 1175903792657132888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Comida_ICON_2_5
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5235178bd3f3dba45b74499280d816ed
-      internalID: 6275534878997634421
+      spriteID: 72becbb3c3bb82f4588e55df0d123c19
+      internalID: -3427962041485414959
       vertices: []
       indices: 
       edges: []

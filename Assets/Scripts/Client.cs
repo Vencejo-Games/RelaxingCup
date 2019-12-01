@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Client : Character
 {
     [SerializeField] private string[] texts;
+    [SerializeField] private int identificador;
 
     private Coffee coffee;
     public Chair chair;
@@ -15,7 +16,6 @@ public class Client : Character
     // Componentes del Character
     private Canvas canvas1;
    
-    
     private Character playerController;
 
     public Vector3 tablePosition;
@@ -24,7 +24,7 @@ public class Client : Character
 
     // guardamos referencia del coffee para poder destruirlo cuando se vaya
     private GameObject coffeInTable;
-
+    
     protected override void Awake()
     {
         base.Awake();
@@ -105,7 +105,7 @@ public class Client : Character
         canvas1.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);  //foto cafe
         canvas1.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = coffee.getSprite(idCoffee);
         Debug.Log(coffee.getSprite(idCoffee));
-        canvas1.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);  //texto
+        canvas1.transform.GetChild(1).gameObject.SetActive(false);  //texto
         yield return new WaitForSeconds(3);
         canvas1.enabled = false;
     }
@@ -114,10 +114,10 @@ public class Client : Character
     {
         // this object was clicked
         canvas1.enabled = true;
-        canvas1.transform.GetChild(0).gameObject.SetActive(true); //bocadillo 
-        canvas1.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);  //foto cafe
-        canvas1.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);  //texto
-        canvas1.transform.GetChild(0).GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = chooseRandomText();
+        canvas1.transform.GetChild(1).gameObject.SetActive(true); //bocadillo 
+        canvas1.transform.GetChild(0).gameObject.SetActive(false);  //foto cafe
+        canvas1.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);  //texto
+        canvas1.transform.GetChild(1).GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = chooseRandomText();
         yield return new WaitForSeconds(6);
         canvas1.enabled = false;
     }
@@ -147,6 +147,8 @@ public class Client : Character
         chair.Free();
         // Margen de tiempo hasta que entre otro cliente
         yield return new WaitForSeconds(2);
+        // Avisamos al game manager para que libere el client
+        game.LiberaCliente(identificador);
         // GG!
         Destroy(this.gameObject);
     }

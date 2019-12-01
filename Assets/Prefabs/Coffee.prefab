@@ -100,10 +100,16 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 8a379d345f6d34548923be31e0b46829, type: 2}
   - {fileID: 7400000, guid: a1ba2d897d238c6439d8f17e49d31342, type: 2}
   - {fileID: 7400000, guid: 2f9f6b7fd39e022499c3265a5987e0c1, type: 2}
+  - {fileID: 7400000, guid: ff67517df37a04145acd6b8c2ad1d953, type: 2}
+  - {fileID: 7400000, guid: 39ec7349910e4564593ce0bbd7b013cd, type: 2}
+  - {fileID: 7400000, guid: 9836892bd87f3324d87762978bfd17af, type: 2}
   sprites:
   - {fileID: 21300000, guid: e2a15192394e0d8488997743c2599929, type: 3}
   - {fileID: 21300000, guid: 9ae22c1f60c06464cb98fa2d2ff08e98, type: 3}
   - {fileID: 21300000, guid: 72fd7070f6a3c8f4894217249096ee9d, type: 3}
+  - {fileID: 1535092054883188313, guid: f14e7da0a37cb1742a44e146b4d440bc, type: 3}
+  - {fileID: 4003706613988703082, guid: f14e7da0a37cb1742a44e146b4d440bc, type: 3}
+  - {fileID: 6305086998842862639, guid: f14e7da0a37cb1742a44e146b4d440bc, type: 3}
 --- !u!95 &7441903092678913779
 Animator:
   serializedVersion: 3
